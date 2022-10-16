@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int i, j, val, arr[5+1][5+1], result = 0;
+    int i, j, val, arr[6][6], result = 0;
 
     for(i = 1; i <= 5; i++){
         for(j = 1; j <= 5; j++){
@@ -13,6 +13,7 @@ int main(){
 
             if(arr[i][j] == 1){
                 result = abs((i-3)) + abs((j-3));
+                break;
             }
         }
     }
